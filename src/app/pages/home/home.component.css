@@ -1,0 +1,47 @@
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+.container::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    background: #000000a9
+}
+
+.container a {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+    background: rgb(27, 27, 27);
+    border-radius: 200px;
+    border: 3px solid #FFF;
+    padding: 1rem;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
