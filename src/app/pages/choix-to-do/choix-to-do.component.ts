@@ -29,7 +29,7 @@ export class ChoixToDoComponent {
     this.showLoader();
     setTimeout(() => {
       this.isLoading = false;
-      this.router.navigate(['/piecequestion']);
+      this.router.navigate(['/areyoupiece']);
       this.hideLoader();
     }, 2000);
   }

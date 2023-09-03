@@ -12,11 +12,12 @@ import { HomeComponent } from './pages/home/home.component';
 import { PlaceMoneyComponent } from './pages/place-money/place-money.component';
 import { RecapFormComponent } from './pages/recap-form/recap-form.component';
 import { RemerciementsComponent } from './pages/remerciements/remerciements.component';
+import { AreJouPieceComponent } from './pages/are-jou-piece/are-jou-piece.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent 
+    component: HomeComponent
   },
   {
     path: "lang",
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: "choixtodo",
     component: ChoixToDoComponent
+  },
+  {
+    path: "areyoupiece",
+    component: AreJouPieceComponent
   },
   {
     path: "piecequestion",

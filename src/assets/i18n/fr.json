@@ -11,5 +11,14 @@
   "identification": "Identification",
   "achat-puce": "Achat de puce",
   "achat-munites": "Achat de minutes",
-  "mobile-money": "L'argent téléphonique"
+  "mobile-money": "L'argent téléphonique",
+  "select-piece": "Selectionnez la pièce d'identité",
+  "yes": "Oui",
+  "no": "Non",
+  "question-piece": "Vous avez une pièce d'identité ?",
+  "cni": "Carte d'Identité Nationale",
+  "attestation": "Attestation d'Identité",
+  "permis": "Permis de conduire",
+  "passport": "Passport"
+
 }

@@ -45,7 +45,7 @@ export class LangComponent {
         this.isLoading = false;
         this.router.navigate(['/choixtodo']);
         this.hideLoader();
-      }, 2000);
+      }, 1000);
     } else {
       this.translate.use(language);
     }

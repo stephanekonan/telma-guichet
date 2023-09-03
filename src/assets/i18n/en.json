@@ -11,5 +11,13 @@
   "identification": "Identification",
   "achat-puce": "Sim Purchase",
   "achat-munites": "AirTime Purchase",
-  "mobile-money": "Mobile Money"
+  "mobile-money": "Mobile Money",
+  "select-piece": "Select the document your ID",
+  "yes": "Yes",
+  "no": "No",
+  "question-piece": "Do you have ID ?",
+  "cni": "National Identity Card",
+  "attestation": "Identity Certificate",
+  "permis": "Driving Licence",
+  "passport": "Passport"
 }

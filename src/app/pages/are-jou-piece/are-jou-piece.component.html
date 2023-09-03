@@ -1,0 +1,43 @@
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.7)" size="medium" color="#fff" type="ball-clip-rotate-multiple"
+>
+  <div class="tw-flex twflex-column tw-place-items-center">
+    <img style="height: 30; width: 30;" src='../../../assets/media/gif/ic_loading_img.gif'/>
+  </div>
+</ngx-spinner>
+
+<div class="container-lang">
+  <div class="logo">
+      <a href="../index.html"><img src="../../../assets/media/images/Logo Telma.svg" alt=""></a>
+  </div>
+
+  <div class="container-card">
+      <div class="text">
+          <span>{{ 'question-piece' | translate }}</span>
+      </div>
+
+      <div class="buttons">
+        <button type="button" (click)="anwserResponse('non')" class="tw-py-2.5 tw-px-5 tw-mr-2 tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900 tw-focus:outline-none tw-bg-white tw-rounded-lg tw-border tw-border-gray-200 tw-hover:bg-gray-100 tw-hover:text-blue-700 tw-focus:z-10 tw-focus:ring-4 tw-focus:ring-gray-200 tw-dark:focus:ring-gray-700 tw-dark:bg-gray-800 tw-dark:text-gray-400 tw-dark:border-gray-600 tw-dark:hover:text-white tw-dark:hover:bg-gray-700">
+          {{ 'no' | translate }}
+        </button>
+        <button type="button" (click)="anwserResponse('oui')" class="btn2 tw-text-white tw-hover:bg-blue-800 tw-focus:ring-4 tw-focus:ring-blue-300 tw-font-medium tw-rounded-lg tw-text-sm tw-px-5 tw-py-2.5 tw-mr-2 tw-mb-2 tw-dark:bg-blue-600 tw-dark:hover:bg-blue-700 tw-focus:outline-none tw-dark:focus:ring-blue-800">
+          {{ 'yes' | translate }}
+        </button>
+      </div>
+
+
+  </div>
+
+  <footer>
+      <div class="creator">
+          <span>{{ 'footer-designer' | translate }}</span>
+      </div>
+      <div class="reseaux-sociaux">
+          <span>{{ 'join-us' | translate }}</span>
+          <div class="images">
+              <a href="#"><img src="../../../assets/media/images/facebook icon.png" alt=""></a>
+              <a href="#"><img src="../../../assets/media/images/instagram icon.png" alt=""></a>
+              <a href="#"><img src="../../../assets/media/images/youtube icon.png" alt=""></a>
+          </div>
+      </div>
+  </footer>
+</div>
