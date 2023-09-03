@@ -1,38 +1,49 @@
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.6)" size="medium" color="#fff" type="ball-clip-rotate-multiple">
+  <p style="font-size: 20px; color: white"> {{ 'loading' | translate }}</p>
+</ngx-spinner>
+
 <div class="container-lang">
-    <div class="logo">
-        <a href="../index.html"><img src="../../../assets/media/images/Logo Telma.svg" alt=""></a>
+  <div class="logo">
+    <a href="../index.html"><img src="../../../assets/media/images/Logo Telma.svg" alt=""></a>
+  </div>
+
+  <div class="container">
+
+    <span class="text"> {{ 'langue-choix' | translate }}</span>
+
+    <div class="link-drap">
+      <a (click)="switchLanguage('fr')" style="cursor: pointer;">
+        <div class="francais">
+          <div class="img">
+            <img src="../../../assets/media/images/Flag_of_France.png" alt="">
+          </div>
+          <span>{{ 'LangFrancais' | translate }}</span>
+        </div>
+      </a>
+      <a (click)="switchLanguage('en')" style="cursor: pointer;">
+        <div class="anglais">
+          <div class="img">
+            <img src="../../../assets/media/images/Flag_of_English.png" alt="">
+          </div>
+          <span>{{ 'LangAnglais' | translate }}</span>
+
+        </div>
+      </a>
     </div>
 
-    <div class="container">
-        <a (click)="changeLanguage()" routerLink="/choixtodo" style="cursor: pointer;">
-            <div class="francais">
-                <div class="img">
-                    <img src="../../../assets/media/images/Flag_of_France 1.png" alt="">
-                </div>
-                <span>{{ 'LangFrancais' | translate }}</span>
-            </div>
-        </a>
-        <a (click)="changeLanguage()" routerLink="/choixtodo" style="cursor: pointer;">
-            <div class="anglais">
-                <div class="img">
-                    <img src="../../../assets/media/images/Flag_of_English 1.png" alt="">
-                </div>
-                <span>{{ 'LangAnglais' | translate }}</span>
-            </div>
-        </a>
-    </div>
+  </div>
 
-    <footer>
-        <div class="creator">
-            <span>Telma © 2023 - Designed by Axon</span>
-        </div>
-        <div class="reseaux-sociaux">
-            <span>REGOIGNEZ-NOUS SUR </span>
-            <div class="images">
-                <a href="#"><img src="../../../assets/media/images/facebook icon.png" alt=""></a>
-                <a href="#"><img src="../../../assets/media/images/instagram icon.png" alt=""></a>
-                <a href="#"><img src="../../../assets/media/images/youtube icon.png" alt=""></a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="creator">
+      <span>{{ 'footer-designer' | translate }}</span>
+    </div>
+    <div class="reseaux-sociaux">
+      <span> {{ 'join-us' | translate }} </span>
+      <div class="images">
+        <a href="#"><img src="../../../assets/media/images/facebook icon.png" alt=""></a>
+        <a href="#"><img src="../../../assets/media/images/instagram icon.png" alt=""></a>
+        <a href="#"><img src="../../../assets/media/images/youtube icon.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
 </div>

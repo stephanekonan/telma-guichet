@@ -1,5 +1,8 @@
 {
-  "LangFrancais": "Français",
+  "LangFrancais": "French",
   "LangAnglais": "English",
-  "langue-choix": "Select your language"
+  "langue-choix": "Select your language",
+  "join-us": "JOIN US ON",
+  "footer-designer": "Telma © 2023 - Conçu par Axon",
+  "loading": "Loading..."
 }

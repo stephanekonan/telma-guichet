@@ -19,7 +19,14 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
-import firebase from 'firebase/app';
+// import firebase from 'firebase/app';
+
+import { SelectButtonModule } from 'primeng/selectbutton'
+import { ButtonModule } from 'primeng/button'
+import { CardModule } from 'primeng/card'
+
+import { FormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -48,10 +55,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    SelectButtonModule,
+    ButtonModule,
+    CardModule,
+    FormsModule,
+    NgxSpinnerModule,
     AngularFireModule.initializeApp(environment.firebase),
     HttpClientModule,
     TranslateModule.forRoot({
-      // defaultLanguage: 'fr',
+      defaultLanguage: 'fr',
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
