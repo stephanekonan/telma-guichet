@@ -4,7 +4,7 @@ module.exports = {
       "./src/**/*.{html,ts}",
       "./node_modules/flowbite/**/*.js"
   ],
-  prefix: 'tw',
+  prefix: 'tw-',
   theme: {
     extend: {},
   },

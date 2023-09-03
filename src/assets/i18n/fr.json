@@ -3,6 +3,13 @@
   "LangAnglais": "Anglais",
   "langue-choix": "Selectionnez votre langue",
   "join-us": "REGOIGNEZ-NOUS SUR",
-  "footer-designer": "Telma © 2023 - Designed by Axon",
-  "loading": "Chargement..."
+  "footer-designer": "Telma © 2023 - Conçu par Axon",
+  "loading": "Chargement...",
+  "select-operation": "Selectionnez l'opération à effectuer",
+  "back": "Retour",
+  "valid": "Valider",
+  "identification": "Identification",
+  "achat-puce": "Achat de puce",
+  "achat-munites": "Achat de minutes",
+  "mobile-money": "L'argent téléphonique"
 }

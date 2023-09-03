@@ -1,6 +1,6 @@
 import { Component, Inject, LOCALE_ID } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Router } from '@angular/router'; // Importez le Router
+import { Router } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
