@@ -17,6 +17,10 @@ import { RemerciementsComponent } from './pages/remerciements/remerciements.comp
 import { HomeComponent } from './pages/home/home.component';
 
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
+import firebase from 'firebase/app';
+
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -44,6 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    AngularFireModule.initializeApp(environment.firebase),
     HttpClientModule,
     TranslateModule.forRoot({
       // defaultLanguage: 'fr',

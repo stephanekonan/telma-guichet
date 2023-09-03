@@ -17,7 +17,6 @@ export class LangComponent {
 
   changeLanguage() {
     this.translate.use(this.lang);
-    window.location.reload();
   }
 
 }
