@@ -18,9 +18,9 @@ import { PlaceMoneyComponent } from './pages/place-money/place-money.component';
 import { RemerciementsComponent } from './pages/remerciements/remerciements.component';
 import { HomeComponent } from './pages/home/home.component';
 
-
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
+import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toastr';
 
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
@@ -57,6 +57,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrimengsModule,
     FormsModule,
     NgxSpinnerModule,
+    ToastrModule,
+    ToastNoAnimation,
     AngularFireModule.initializeApp(environment.firebase),
     HttpClientModule,
     TranslateModule.forRoot({
@@ -66,7 +68,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    ToastNoAnimationModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

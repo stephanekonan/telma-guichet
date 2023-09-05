@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-are-jou-piece',
@@ -33,8 +34,21 @@ export class AreJouPieceComponent {
         this.router.navigate(['/piecequestion']);
         this.hideLoader();
       }, 1000);
-    } else {
-      this.router.navigate(['/'])
+    } else if(response === 'non') {
+      setTimeout(() => {
+        setTimeout(() => {
+          this.router.navigate(['/'])
+        }, 3500)
+        this.hideLoader();
+        Swal.fire({
+          timer: 3000,
+          icon: 'success',
+          timerProgressBar: true,
+          titleText: 'Merci, Bonne journée !',
+          showConfirmButton: false,
+          
+        })
+      })
     }
   }
 
