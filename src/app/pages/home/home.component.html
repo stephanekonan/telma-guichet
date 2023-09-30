@@ -1,9 +1,14 @@
-<div class="container">
+<div class="container tw-cursor-pointer" routerLink="/lang">
     <video (click)="afficherLien()" src="../../../assets/media/videos/v2.mp4" autoplay muted="" loop="infinite"></video>
-    <a routerLink="/lang" [hidden]="!lienVisible">
-        <span>Commencer</span>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-        </svg>
-    </a>
+    <div class="tw-flex tw-flex-column">
+      <img src="../../../assets/media/images/logo_telma.svg" alt="">
+      <div class="tw-flex-col">
+        <div>
+          <h2>L'OPERATEUR</h2>
+        </div>
+        <div>
+          <h2>PROCHE DE VOUS</h2>
+        </div>
+      </div>
+    </div>
 </div>

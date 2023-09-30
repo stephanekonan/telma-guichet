@@ -17,14 +17,15 @@ export class LangComponent {
     private translate: TranslateService,
     private spinner: NgxSpinnerService
   ) {
-    translate.addLangs(['fr', 'en']);
-    translate.setDefaultLang('fr');
+    translate.addLangs(['en', 'fr']);
+    translate.setDefaultLang('en');
 
     const browserLang = translate.getBrowserLang();
+    console.log(browserLang);
     if (browserLang) {
-      translate.use(browserLang.match(/fr|en/) ? browserLang : 'fr');
+      translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
     } else {
-      translate.use('fr');
+      translate.use('en');
     }
   }
 
@@ -39,7 +40,8 @@ export class LangComponent {
   switchLanguage(language: string) {
     this.isLoading = true;
     this.showLoader();
-    if (this.translate.currentLang === 'fr') {
+    console.log(this.translate.currentLang);
+    if (this.translate.currentLang === 'en') {
       this.translate.use(language);
       setTimeout(() => {
         this.isLoading = false;
